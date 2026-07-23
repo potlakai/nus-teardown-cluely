@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/logo.png" width="150" alt="Nūs statue" />
+
 # Cluely Clone - made by Nūs
 **The complete Cluely, free.** An AI copilot that floats over your screen,
 sees what you see, hears both sides of your meetings, and stays out of your
@@ -127,6 +129,8 @@ has one capture setting that decides whether it honors the invisibility flag:
 4. Under **Screen capture mode**, choose **Advanced capture with window
    filtering**.
 5. Restart any share already in progress so the change takes effect.
+
+<img src="docs/zoom-capture-mode.png" width="520" alt="Zoom screen capture mode set to Advanced capture with window filtering" />
 
 **Why this matters:** "with window filtering" lets Zoom drop protected windows
 from the share. The other options (**"without window filtering"** and the
