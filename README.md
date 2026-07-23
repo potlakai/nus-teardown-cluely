@@ -131,8 +131,6 @@ has one capture setting that decides whether it honors the invisibility flag:
    filtering**.
 5. Restart any share already in progress so the change takes effect.
 
-<img src="docs/zoom-capture-mode.png" width="560" alt="Zoom Settings, Share Screen, Advanced, with Screen capture mode set to Advanced capture with window filtering" />
-
 **Why this matters:** "with window filtering" lets Zoom drop protected windows
 from the share. The other options (**"without window filtering"** and the
 legacy modes) capture the raw screen and **will** show the overlay.
