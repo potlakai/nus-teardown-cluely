@@ -1,0 +1,67 @@
+{
+  "name": "nus-teardown-cluely",
+  "version": "0.1.0",
+  "description": "Open-source invisible AI overlay — three separate inputs (screen, mic, system audio) into an LLM. A complete Cluely-style copilot for meetings and coding problems, replicated by Nūs // Teardown.",
+  "license": "GPL-3.0-or-later",
+  "author": "potlakai",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --mac zip",
+    "dist:win": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.nus.overlay",
+    "productName": "Nūs",
+    "asar": false,
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "renderer/**/*"
+    ],
+    "mac": {
+      "target": [
+        "dir"
+      ],
+      "category": "public.app-category.productivity",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "identity": null,
+      "extendInfo": {
+        "LSUIElement": true,
+        "NSMicrophoneUsageDescription": "Nūs transcribes your microphone so it can help you in conversations.",
+        "NSCameraUsageDescription": "Nūs does not use the camera.",
+        "NSAudioCaptureUsageDescription": "Nūs captures system audio to transcribe the other participant in a call."
+      }
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    }
+  },
+  "keywords": [
+    "electron",
+    "overlay",
+    "ai",
+    "assistant",
+    "screencapturekit",
+    "macos"
+  ],
+  "devDependencies": {
+    "electron": "^39.8.10",
+    "electron-builder": "^24.13.3"
+  },
+  "overrides": {
+    "tar": "^7.5.19"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@google/genai": "^0.3.0",
+    "lucide-static": "^0.468.0",
+    "openai": "^4.73.0"
+  }
+}
