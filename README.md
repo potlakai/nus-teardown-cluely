@@ -2,7 +2,7 @@
 
 <img src="docs/logo.png" width="140" alt="Nūs statue logo" />
 
-# nus teardown // cluely
+# Nūs teardown // cluely
 
 **The complete Cluely, free.** An AI copilot that floats over your screen,
 sees what you see, hears both sides of your meetings, and stays out of your
