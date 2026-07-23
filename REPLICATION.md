@@ -12,7 +12,7 @@ Cluely's visible magic is an overlay window that screen-shares and recordings
 cannot see. That is one OS-level call per platform — Electron exposes it as
 `setContentProtection(true)` (`WDA_EXCLUDEFROMCAPTURE` on Windows,
 `NSWindowSharingNone` on macOS). The standalone mechanic proof lives in
-[`nus-teardown/examples/cluely`](https://github.com/potlakai/nus-teardown/tree/main/examples/cluely).
+[`proof/`](./proof).
 
 But the mechanic is not the product. The product is the composition of the
 subsystems below — which is why this benchmark replicates all of them.

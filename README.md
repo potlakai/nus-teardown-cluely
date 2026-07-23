@@ -167,7 +167,7 @@ optional screenshot, into your model. Answers **stream** into the panel.
 `NSWindowSharingNone` on macOS. It is the same mechanism DRM players and Zoom's
 own toolbar use, not a GPU trick, and best-effort per the disclaimer above. The
 standalone proof of just this mechanic lives in
-[`nus-teardown/examples/cluely`](https://github.com/potlakai/nus-teardown/tree/main/examples/cluely).
+[`proof/`](./proof).
 
 ```
 main process ──┬─ overlay window (frameless, transparent, always-on-top, content-protected)
