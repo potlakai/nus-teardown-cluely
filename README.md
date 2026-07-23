@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="docs/logo.png" width="140" alt="Nūs statue logo" />
-
 # Cluely Clone - made by Nūs
 **The complete Cluely, free.** An AI copilot that floats over your screen,
 sees what you see, hears both sides of your meetings, and stays out of your
